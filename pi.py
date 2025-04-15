@@ -148,11 +148,6 @@ try:
             time.sleep(1)
             state = 0
 
-        elif state == 8:
-            print("[STATE 8] Spin failed. Retrying...")
-            rotate_to_angle(current_angle, 1)
-            state = 0
-
         else:
             print("[STATE ?] Unknown state, resetting.")
             state = 0
